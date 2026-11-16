@@ -59,8 +59,6 @@
     font-family: 'Special Gothic Condensed One', 'Arial Narrow', Impact, sans-serif;
     text-transform: uppercase; font-size: 1.5rem; line-height: 1;
   }
-  /* Optional: drop your white logo here and hide the text mark
-     <img src="data:image/png;base64,..." alt="Harbinger" height="28"> */
   .tabs { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
   .tab {
     padding: 8px 14px; border-radius: 8px;
@@ -379,7 +377,6 @@
 
 <header class="nav">
   <a class="brand" href="#dashboard" aria-label="Harbinger Dashboard home">
-    <!-- logo goes here (see comment in CSS) -->
     <span>Harbinger Thermal</span>
   </a>
   <nav class="tabs" aria-label="Tools">
@@ -401,19 +398,16 @@
       <a class="card" href="#obc">
         <div class="art" aria-hidden="true">
           <svg viewBox="0 0 400 220">
-            <!-- Grid plug -->
             <path class="ink" d="M24 110 H8" fill="none" stroke-width="3" stroke-linecap="round"/>
             <rect class="ink" x="24" y="80" width="38" height="60" rx="8" fill="rgba(255,255,255,.06)" stroke-width="2.5"/>
             <rect x="62" y="91" width="14" height="7" rx="2" fill="rgba(255,255,255,.85)"/>
             <rect x="62" y="122" width="14" height="7" rx="2" fill="rgba(255,255,255,.85)"/>
             <text class="lbl" x="38" y="168" text-anchor="middle">Grid</text>
 
-            <!-- OBC module -->
             <rect x="140" y="58" width="120" height="104" rx="14" fill="rgba(14,138,163,.18)" stroke="#3EA1B5" stroke-width="2.5"/>
             <g class="bolt"><polygon points="206,72 182,114 198,114 190,148 218,102 202,102" fill="#FFFFFF"/></g>
             <text class="lbl" x="200" y="190" text-anchor="middle">On-board charger</text>
 
-            <!-- Battery -->
             <rect class="ink" x="322" y="84" width="56" height="52" rx="8" fill="rgba(255,255,255,.06)" stroke-width="2.5"/>
             <rect x="378" y="101" width="8" height="18" rx="2" fill="rgba(255,255,255,.85)"/>
             <rect x="330" y="92" width="12" height="36" rx="2" fill="#86C4D0"/>
@@ -421,13 +415,11 @@
             <rect x="362" y="92" width="10" height="36" rx="2" fill="#86C4D0" opacity=".45"/>
             <text class="lbl" x="350" y="168" text-anchor="middle">Battery</text>
 
-            <!-- Charge arrows (grid to battery): teal, flowing right -->
             <line class="flow-r" x1="82" y1="96" x2="122" y2="96" stroke="#86C4D0" stroke-width="3.5" stroke-linecap="round"/>
             <polygon points="136,96 122,88 122,104" fill="#86C4D0"/>
             <line class="flow-r" x1="266" y1="96" x2="304" y2="96" stroke="#86C4D0" stroke-width="3.5" stroke-linecap="round"/>
             <polygon points="318,96 304,88 304,104" fill="#86C4D0"/>
 
-            <!-- Discharge arrows (battery to grid, V2G): white, flowing left -->
             <line class="flow-l" x1="136" y1="126" x2="96" y2="126" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
             <polygon points="82,126 96,118 96,134" fill="#FFFFFF"/>
             <line class="flow-l" x1="318" y1="126" x2="280" y2="126" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
@@ -453,10 +445,7 @@
                 <stop offset="1" stop-color="#0E8AA3"/>
               </linearGradient>
             </defs>
-
-            <!-- Chip package -->
             <g>
-              <!-- pins -->
               <g fill="rgba(255,255,255,.8)">
                 <rect x="138" y="88" width="12" height="6" rx="2"/><rect x="138" y="102" width="12" height="6" rx="2"/><rect x="138" y="116" width="12" height="6" rx="2"/><rect x="138" y="130" width="12" height="6" rx="2"/><rect x="138" y="144" width="12" height="6" rx="2"/>
                 <rect x="250" y="88" width="12" height="6" rx="2"/><rect x="250" y="102" width="12" height="6" rx="2"/><rect x="250" y="116" width="12" height="6" rx="2"/><rect x="250" y="130" width="12" height="6" rx="2"/><rect x="250" y="144" width="12" height="6" rx="2"/>
@@ -467,14 +456,11 @@
               <g class="die"><rect x="172" y="98" width="56" height="44" rx="6" fill="url(#die)"/></g>
               <text x="200" y="126" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="16">T<tspan font-size="10" dy="4">J</tspan></text>
             </g>
-
-            <!-- Heat waves -->
             <g fill="none" stroke="#FF5A5F" stroke-width="3.5" stroke-linecap="round">
               <path class="wave w1" d="M176 62 q-8 -9 0 -18 t0 -18"/>
               <path class="wave w2" d="M200 62 q-8 -9 0 -18 t0 -18"/>
               <path class="wave w3" d="M224 62 q-8 -9 0 -18 t0 -18"/>
             </g>
-
             <text class="lbl" x="200" y="198" text-anchor="middle">Junction temperature</text>
           </svg>
         </div>
@@ -499,10 +485,6 @@
 <div class="page">
   <header class="masthead">
     <div>
-      <!-- Optional: add your logo lockup here (same tags as the Thermal Network page):
-           <img class="logo logo-black" alt="Harbinger" width="1200" height="131" src="data:image/png;base64,...">
-           <img class="logo logo-white" alt="" aria-hidden="true" width="1200" height="131" src="data:image/png;base64,...">
-      -->
       <h1 class="h-display">OBC Cold Plate Dashboard</h1>
       <p>Thermal and hydraulic performance analysis</p>
     </div>
@@ -632,7 +614,6 @@
 <div class="page">
   <header class="masthead">
     <div>
-      <!-- Optional: add your logo lockup here (the two <img class="logo ..."> tags from your original file) -->
       <h1 class="h-display">Thermal Network</h1>
       <p>Junction temperature (T<sub>J</sub>) analysis</p>
     </div>
@@ -765,7 +746,7 @@
 /* ===== On-Board Charger tool ===== */
 (function () {
 /* ==========================================================================
-   1. FLUID / SOLID / FET PROPERTIES  (port of calculator.py)
+   1. FLUID / SOLID / FET PROPERTIES
    ========================================================================== */
 const FLUID_MATERIALS = {
   weg5050: { name: "50/50 Water-Ethylene Glycol (WEG)", rho: 1044.0, mu: 1.52e-3, cp: 3482.0, k: 0.411, pr: 12.85 },
@@ -966,14 +947,19 @@ class ColdPlateFlow {
     const R_pkg = (fet.Rth_jc + fet.Rth_tgp) / Math.max(1, N_fets);
     const T_j = T_base + Q_total_W * R_pkg;
 
+    /* Per-FET stackup:  R_cp = (T_J - T_ref) / P_fet - R_gap pad - R_JC  (T_ref = coolant inlet) */
+    const P_fet = Q_total_W / Math.max(1, N_fets);
+    const R_cp_fet = (T_j - T_inlet_C) / P_fet - fet.Rth_tgp - fet.Rth_jc;
+
     return {
       h_apparent_W_m2K: h_apparent, fin_efficiency: eta_fin,
       R_cond_base_K_W: R_cond_base * scale, R_conv_K_W: R_conv * scale,
       R_cal_K_W: R_cal * scale, R_spread_bank_K_W: R_spread * scale,
       R_package_bank_K_W: R_pkg, R_coldplate_effective_K_W: R_cp,
-      R_jc_bank_K_W: fet.Rth_jc / Math.max(1, N_fets),
-      R_tim_bank_K_W: fet.Rth_tgp / Math.max(1, N_fets),
-      R_system_total_K_W: R_pkg + R_cp, T_baseplate_C: T_base, T_junction_C: T_j,
+      R_jc_fet_K_W: fet.Rth_jc,
+      R_gp_fet_K_W: fet.Rth_tgp,
+      R_cp_fet_K_W: R_cp_fet,
+      R_system_total_K_W: (T_j - T_inlet_C) / P_fet, T_baseplate_C: T_base, T_junction_C: T_j,
     };
   }
 
@@ -1003,29 +989,29 @@ class ColdPlateFlow {
   sweepFlowRates(flow_lpm, Q, N_fets, T_in, n = 60) {
     const lpm_max = Math.max(25, Math.ceil(flow_lpm * 1.4 / 5) * 5);
     const xs = Array.from({ length: n }, (_, i) => 1 + (lpm_max - 1) * i / (n - 1));
-    const S = { dp: [], tj: [], rcp: [], jc: [], tim: [] };
+    const S = { dp: [], tj: [], rcp: [], jc: [], gp: [] };
     for (const lpm of xs) {
       const h = this.solveHydraulics(lpm * 1e-3 / 60);
       const t = this.thermalPerformance(h, Q, N_fets, T_in);
-      S.dp.push(h.pressure_drop_kPa); S.tj.push(t.T_junction_C); S.rcp.push(t.R_coldplate_effective_K_W);
-      S.jc.push(t.R_jc_bank_K_W); S.tim.push(t.R_tim_bank_K_W);
+      S.dp.push(h.pressure_drop_kPa); S.tj.push(t.T_junction_C); S.rcp.push(t.R_cp_fet_K_W);
+      S.jc.push(t.R_jc_fet_K_W); S.gp.push(t.R_gp_fet_K_W);
     }
     const mx = a => Math.max(...a), mn = a => Math.min(...a);
     const tjR = Math.max(2, mx(S.tj) - mn(S.tj)) * 0.2;
     const rcR = Math.max(0.002, mx(S.rcp) - mn(S.rcp)) * 0.2;
-    const tot = xs.map((_, i) => S.jc[i] + S.tim[i] + S.rcp[i]);
+    const tot = xs.map((_, i) => S.jc[i] + S.gp[i] + S.rcp[i]);
     return {
       lpm_min: 1, lpm_max, lpm_sweep: xs,
       dp_kPa: S.dp, dp_y_max: mx(S.dp) > 0 ? mx(S.dp) * 1.15 : 10,
       T_junction_C: S.tj, tj_y_min: mn(S.tj) - tjR, tj_y_max: mx(S.tj) + tjR,
       R_coldplate_K_W: S.rcp, rcp_y_min: Math.max(0, mn(S.rcp) - rcR), rcp_y_max: mx(S.rcp) + rcR,
-      R_jc_K_W: S.jc, R_tim_K_W: S.tim,
+      R_jc_K_W: S.jc, R_gp_K_W: S.gp,
       stack_y_max: tot.length ? mx(tot) * 1.15 : 0.1,
     };
   }
 }
 
-/* ---- dashboard API (port of build_cold_plate / evaluate_cold_plate) ---- */
+/* ---- dashboard API ---- */
 function buildColdPlate(s) {
   const preset = SOLID_MATERIALS[s.material_preset] || {};
   const solid = { name: preset.name || "Custom Metal", k: +s.k_solid, t_base: s.t_base_mm * 1e-3,
@@ -1047,8 +1033,8 @@ function evaluateColdPlate(plate, s) {
   const h = plate.solveHydraulics(v);
   const t = plate.thermalPerformance(h, s.q_total_W, s.N_fets, s.T_inlet_C);
   const sweep = plate.sweepFlowRates(s.flow_rate_lpm, s.q_total_W, s.N_fets, s.T_inlet_C);
-  const labels = ["R_θJC", "R_θ-TIM", "R_θ cold plate"];
-  const values = [t.R_jc_bank_K_W, t.R_tim_bank_K_W, t.R_coldplate_effective_K_W];
+  const labels = ["R_θJC", "R_θ gap pad", "R_θ cold plate"];
+  const values = [t.R_jc_fet_K_W, t.R_gp_fet_K_W, t.R_cp_fet_K_W];
   const total = Math.max(1e-9, values.reduce((a, b) => a + b, 0));
   return {
     kpis: {
@@ -1056,7 +1042,7 @@ function evaluateColdPlate(plate, s) {
       pressure_drop_kPa: h.pressure_drop_kPa, dp_array_kPa: h.dp_array_kPa, dp_manifold_kPa: h.dp_manifold_kPa,
       pumping_power_kW: h.pumping_power_W / 1000, watts_per_fet: s.q_total_W / Math.max(1, s.N_fets),
       bypass_pct: h.bypass_fraction * 100, fin_efficiency_pct: t.fin_efficiency * 100,
-      R_coldplate_effective_K_W: t.R_coldplate_effective_K_W, R_system_total_K_W: total,
+      R_coldplate_effective_K_W: t.R_cp_fet_K_W, R_system_total_K_W: total,
     },
     stackup: { labels, values, percentages: values.map(x => x / total * 100), total_K_W: total,
                x_max: (Math.max(...values) > 0 ? Math.max(...values) : 0.1) * 1.75 },
@@ -1148,7 +1134,7 @@ function syncInputs() {
 document.getElementById("resetBtn").addEventListener("click", () => { resetState(); syncInputs(); schedule(); });
 
 /* ==========================================================================
-   4. SVG CHART HELPERS (colors come from CSS variables, so charts follow light/dark)
+   4. SVG CHART HELPERS
    ========================================================================== */
 let uid = 0;
 
@@ -1234,7 +1220,7 @@ function barChart(st, flow, colors) {
   return s;
 }
 
-/* ---- Cold plate schematic (drawn on the black panel, with dimension labels) ---- */
+/* ---- Cold plate schematic ---- */
 function pinPath(centers, r) {
   const d = [], r2 = 2 * r;
   for (const [x, y] of centers)
@@ -1357,7 +1343,7 @@ function cadViews(cad, preset, k) {
 /* ==========================================================================
    5. RENDER
    ========================================================================== */
-const STACK_COLORS = ["var(--ink)", "var(--teal-5)", "var(--teal)"];   // JC, TIM, cold plate
+const STACK_COLORS = ["var(--ink)", "var(--teal-5)", "var(--teal)"];   // JC, gap pad, cold plate
 let pending = false;
 function schedule() { if (pending) return; pending = true; requestAnimationFrame(() => { pending = false; render(); }); }
 
@@ -1413,7 +1399,7 @@ function render() {
     { title: "Stackup vs flow rate (cumulative)", xlabel: "Flow rate [LPM]", ylabel: "Cumulative R_th [K/W]",
       xmin: sweep.lpm_min, xmax: sweep.lpm_max, ymin: 0, ymax: sweep.stack_y_max },
     sweep,
-    [sweep.R_jc_K_W, sweep.R_tim_K_W, sweep.R_coldplate_K_W],
+    [sweep.R_jc_K_W, sweep.R_gp_K_W, sweep.R_coldplate_K_W],
     STACK_COLORS, flow);
   document.getElementById("stackLegend").innerHTML =
     stackup.labels.map((l, i) => `<span><i style="background:${STACK_COLORS[i]}"></i>${l}</span>`).join("");
@@ -1450,9 +1436,9 @@ window.ObcTool = {
     return {
       Tj: t.T_junction_C, dp: h.pressure_drop_kPa, dp_array: h.dp_array_kPa, dp_manifold: h.dp_manifold_kPa,
       bypass_pct: h.bypass_fraction * 100, fin_eff: t.fin_efficiency * 100, pump_W: h.pumping_power_W,
-      R_cp: t.R_coldplate_effective_K_W, R_sys: t.R_system_total_K_W,
-      labels: ["R_θJC", "R_θ-TIM", "R_θ cold plate"],
-      stack: [t.R_jc_bank_K_W, t.R_tim_bank_K_W, t.R_coldplate_effective_K_W],
+      R_cp: t.R_cp_fet_K_W, R_sys: t.R_system_total_K_W,
+      labels: ["R_θJC", "R_θ gap pad", "R_θ cold plate"],
+      stack: [t.R_jc_fet_K_W, t.R_gp_fet_K_W, t.R_cp_fet_K_W],
     };
   },
 };
@@ -1687,7 +1673,7 @@ window.ObcTool = {
     let msg = '**On-board charger** at **' + f(s.flow_rate_lpm) + ' LPM**, **' + f(s.q_total_W, 0) + ' W** across ' + s.N_fets + ' FETs (' + f(s.q_total_W / s.N_fets) + ' W each):\n' +
       '• T_J **' + f(p.Tj) + ' °C** (inlet ' + f(s.T_inlet_C, 0) + ' °C, +' + f(p.Tj - s.T_inlet_C) + ' °C)\n' +
       '• Pressure drop **' + f(p.dp) + ' kPa** (array ' + f(p.dp_array) + ', ports ' + f(p.dp_manifold) + ')\n' +
-      '• Cold plate **' + f(p.R_cp, 4) + ' K/W**, system **' + f(p.R_sys, 4) + ' K/W**\n' +
+      '• Cold plate **' + f(p.R_cp, 4) + ' K/W**, system **' + f(p.R_sys, 4) + ' K/W** (per FET)\n' +
       '• Bypass flow **' + f(p.bypass_pct) + ' %**, fin efficiency ' + f(p.fin_eff) + ' %, pumping ' + f(p.pump_W, 2) + ' W';
     const notes = [];
     notes.push('Largest thermal contributor: **' + top[1] + '** (' + f(share, 0) + ' % of the stackup).');
@@ -1752,7 +1738,7 @@ window.ObcTool = {
       if (r && r.err) return 'I can\'t evaluate that geometry (' + r.err + ').';
       if (!r) {
         let hi; try { hi = O.point({ flow_rate_lpm: 60 }); } catch (e) { return null; }
-        return 'Even at 60 LPM, T_J is **' + f(hi.Tj) + ' °C**, above **' + f(tg) + ' °C**. Flow isn\'t the limit here: R_θJC + R_θ-TIM alone is ' + f(hi.stack[0] + hi.stack[1], 4) + ' K/W. Try a lower inlet temperature, a lower heat load, or more FETs.';
+        return 'Even at 60 LPM, T_J is **' + f(hi.Tj) + ' °C**, above **' + f(tg) + ' °C**. Flow isn\'t the limit here: R_θJC + R_θ gap pad alone is ' + f(hi.stack[0] + hi.stack[1], 4) + ' K/W. Try a lower inlet temperature, a lower heat load, or more FETs.';
       }
       return 'To hold T_J at or below **' + f(tg) + ' °C** you need about **' + f(r.flow, 2) + ' LPM**. At that flow the pressure drop is **' + f(r.p.dp) + ' kPa** and pumping power **' + f(r.p.pump_W, 2) + ' W** (all other inputs unchanged). Say "flow ' + f(r.flow, 1) + '" to apply it.';
     }
@@ -1829,7 +1815,7 @@ window.ObcTool = {
     [/(fin eff|efficiency)/, '**Fin efficiency** is how well each pin conducts heat to its tip compared with an ideal pin at base temperature. Low values mean the pins are too tall or thin, or the material is too resistive.'],
     [/(pumping|pump power)/, '**Pumping power** is flow rate × pressure drop: the hydraulic power the pump must deliver to push the coolant through the plate.'],
     [/(pressure drop|\bdp\b|manifold|\bports?\b)/, '**Pressure drop** is split into the pin array and the inlet/outlet ports. At typical flows the ports often dominate, so changing the pins mostly affects the thermal side.'],
-    [/(stack ?up|base conduction|fin convection|fluid cal|calorimetric|constriction|spreading|cold plate resistance)/, 'The stackup splits the total thermal resistance into three parts: **R_θJC** (junction to case, per datasheet ÷ FET count), **R_θ-TIM** (the gap pad, ÷ FET count) and **R_θ cold plate** (base conduction, fin convection, coolant caloric rise and 3D constriction combined).'],
+    [/(stack ?up|base conduction|fin convection|fluid cal|calorimetric|constriction|spreading|cold plate resistance)/, 'The stackup is per FET and splits (T_J − T_inlet) ÷ power per FET into three parts: **R_θJC** (datasheet value), **R_θ gap pad** (your gap pad input) and **R_θ cold plate** = (T_J − T_inlet) ÷ P_fet − R_θ gap pad − R_θJC.'],
     [/(kink|bump|wiggle|15 ?lpm|reynolds|regime)/, 'The small kink near 15 LPM is where the correlations switch regime (Reynolds number around 1000). It comes from the model, not from the page.'],
     [/(platform|planform|schematic|chamber view|elevation)/, 'The **Cold plate schematic** shows a labelled top-down **Platform** view (L, W, bypass strips and flow direction), a to-scale **Pin array detail** (D, S_T, S_L) and an **Elevation** cross-section of the base, pins and tip gap.'],
     [/(v2g|bi-?directional|\bobc\b|on-?board charger)/, 'An **on-board charger (OBC)** converts grid AC to battery DC. A bi-directional OBC can also send power back (V2G), and in both directions the FETs make heat that the cold plate has to remove.'],
